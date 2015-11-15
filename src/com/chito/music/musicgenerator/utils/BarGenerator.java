@@ -10,13 +10,7 @@ public class BarGenerator {
 		
 		bar.setBeats(RandomGenerator.randInt(Constants.BEATS));
 		
-		if(allLengths){
-			bar.setAllLengths();
-		}else{
-			bar.setUsualLengths();
-		}
-		
-		bar.setLength(bar.getLengths().get(RandomGenerator.randInt(0, bar.getLengths().size() - 1)));
+		bar.setLength(Constants.SONG_LENGHTS.get(RandomGenerator.randInt(0, Constants.SONG_LENGHTS.size() - 1)));
 		
 		return bar;
 	}
